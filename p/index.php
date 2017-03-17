@@ -11,18 +11,18 @@ $mail->Password = 'password email kau'; // SMTP password
 $mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                 // TCP port to connect to
 
-$mail->setFrom('email kau', 'CodexWorld');
-$mail->addReplyTo('email kau', 'CodexWorld');
+$mail->setFrom('email kau', 'apa2');
+$mail->addReplyTo('email kau', 'apa2');
 $mail->addAddress('email penerima');   // Add a recipient
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 
 $mail->isHTML(true);  // Set email format to HTML
 
-$bodyContent = '<h1>How to Send Email using PHP in Localhost by CodexWorld</h1>';
-$bodyContent .= '<p>This is the HTML email sent from localhost using PHP script by <b>CodexWorld</b></p>';
+$bodyContent = '<h1>How to Send Email using PHP in Localhost by test</h1>';
+$bodyContent .= '<p>This is the HTML email sent from localhost using PHP script by <b>test</b></p>';
 
-$mail->Subject = 'Email from Localhost by CodexWorld';
+$mail->Subject = 'Test';
 $mail->Body    = $bodyContent;
 
 if(!$mail->send()) {
